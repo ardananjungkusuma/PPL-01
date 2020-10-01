@@ -31,3 +31,7 @@ test("Jika Harga 100000 membeli 1 Apply Code 80NIHGAN jadi 20000", () => {
 test("Jika Harga 100000 membeli 3 Apply Code DISKONGAN50 tetap 300000 karna KODE PROMO Tidak Valid", () => {
   expect(recalculate(100000, 3, "DISKONGAN50")).toBe(300000);
 });
+
+test("Jika Harga 100000 membeli 3 Apply Code GEDEDISKON80 tetap 300000 karna KODE PROMO Tidak Valid", () => {
+  expect(recalculate(100000, 3, "GEDEDISKON80")).toBe(300000);
+});
